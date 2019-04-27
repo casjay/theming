@@ -6,8 +6,12 @@
 git clone https://github.com/casjay/theming.git ~/.local/theming
 sudo cp -Rf ~/.local/theming/icons/* /usr/share/icons/
 sudo cp -Rf ~/.local/theming/themes/* /usr/share/themes/
-sudo cp -Rf ~/.local/theming/lightdm-webkit/* /usr/share/lightdm-webkit/themes/Aether
 sudo cp -Rf ~/.local/theming/wallpapers /usr/share/backgrounds/casjaysdev
+```
+
+### LightDM theme
+```
+sudo cp -Rf ~/.local/theming/lightdm-webkit/* /usr/share/lightdm-webkit/themes/Aether
 ```
 
 ### For Debian
