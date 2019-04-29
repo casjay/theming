@@ -1,4 +1,8 @@
+if [ -d ~/.local/theming ]; then
+cd ~/.local/theming && git pull && cd
+else
 git clone https://github.com/casjay/theming.git ~/.local/theming
+fi
 sudo cp -Rf ~/.local/theming/icons/* /usr/share/icons/
 sudo cp -Rf ~/.local/theming/fonts/* /usr/share/fonts/
 sudo cp -Rf ~/.local/theming/themes/* /usr/share/themes/
