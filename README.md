@@ -1,7 +1,12 @@
 # My theming Repo for linux
 ### Theming Repo
 
-### Install
+### Automated Install
+```bash
+bash -c "$(wget -qO - https://raw.githubusercontent.com/casjay/theming/master/install.sh)"
+```
+
+### Manual Install
 ```
 git clone https://github.com/casjay/theming.git ~/.local/theming
 sudo cp -Rf ~/.local/theming/icons/* /usr/share/icons/
