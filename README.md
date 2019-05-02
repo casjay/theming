@@ -44,12 +44,12 @@ dnf install lightdm-webkit2-greeter
 ```
 pacaur -S lightdm-webkit-theme-aether
 ```
-# Set default lightdm-webkit2-greeter theme to Aether
+#### Set default lightdm-webkit2-greeter theme to Aether
 ```
 sudo sed -i 's/^webkit_theme\s*=\s*\(.*\)/webkit_theme = lightdm-webkit-theme-aether #\1/g' /etc/lightdm/lightdm-webkit2-greeter.conf
 ```
 
-# Set default lightdm greeter to lightdm-webkit2-greeter
+#### Set default lightdm greeter to lightdm-webkit2-greeter
 ```
 sudo sed -i 's/^\(#?greeter\)-session\s*=\s*\(.*\)/greeter-session = lightdm-webkit2-greeter #\1/ #\2g' /etc/lightdm/lightdm.conf
 ```
