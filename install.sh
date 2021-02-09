@@ -1,7 +1,8 @@
+#!/usr/bin/env bash
 if [ -d ~/.local/theming ]; then
-cd ~/.local/theming && git pull && cd
+  git -C ~/.local/theming pull
 else
-git clone -q https://github.com/casjay/theming.git ~/.local/theming
+  git clone -q https://github.com/casjay/theming.git ~/.local/theming
 fi
 sudo cp -Rf ~/.local/theming/icons/* /usr/share/icons/
 sudo cp -Rf ~/.local/theming/fonts/* /usr/share/fonts/
